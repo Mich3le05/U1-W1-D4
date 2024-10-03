@@ -1,108 +1,191 @@
 /* IMPOSTAZIONI GENERALI */
+html {font-size: 62.5%;}
+body { 
+    font-family: Poppins, 'Helvetica Neue', sans-serif;
+    font-size: 1.4rem;
+    line-height: 1.5;
+    padding: 15px;
+    background-image: url('../img/sfondo.png');
+    background-position: center center;
+}
 
-body {
-    width: 450px;
-    background-image: url(../img/sfondo.png);
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    margin: auto;
-    color: #000000;
-    font-family: "Poppins", sans-serif;
-    font-weight: 400;
-    font-style: normal;
-  }
-  
 /* HEADER */
-#box1 {
-    text-align: center;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 15px;
-    background-color: #0088aa;
-    color: white;
-    padding-bottom: 15px;
+header {
+  background: linear-gradient(180deg, rgba(0,160,198,1) 0%, rgba(3,109,134,1) 68%);
+  text-align: center;
+  color: white;
+  padding: 2em 1.5em;
+  box-shadow: 0 3px 3px #444;;
+  font-weight: bold;
+  /* text-transform: uppercase; rende tutto maiuscolo */
+  text-transform: uppercase;
+  /* margine inferiore */
+  margin-bottom: 1.5em;
+}
+header div img {
+  margin-bottom: 20px;
+}
+header div p {
+  margin-bottom: 1.5em;
+}
+#lista1 {
+  list-style: none;
+}
+#tab1 {
+  color: white;
+  text-decoration: none;
 }
 
-#logo {
-    width: 270px;
-    padding-top: 35px;
-    text-align: center;
-}
-
-
-header ul {
-    list-style-type: none;
-    }
 
 /* MAIN */
-#author {
-    display: block;
-    color: rgba(0, 0, 0, 0.4);
-    text-align: center;
-    margin-top: 1rem;
-  }
+main {
+  background-color: white;
+  box-shadow: 0 3px 3px #444;
+  padding: 2em 1em;
+  margin-bottom: 1.5em;
+}
+/* ELEMENTI NEL MAIN - ARTICLE */
+h1 {
+  font-size: 2em;
+  font-weight: bold;
+  margin-bottom: 0.7em;
+}
+#tlist {
+margin-top: 1.5em;
+}
 
-  #box2 {
-    margin-top: 25px;
-    width: 420px;
-    margin-top: 20px;
-    margin-left: auto;
-    margin-right: auto;
-    background-color: white;
-    padding: 15px;
-  }
+#autore {
+  color: #a0a0a0;
+  margin-bottom: 1.5em;
+}
 
-  main strong {
-    color: red;
-  }
-
- #video  {
-    border-radius: 10%;
+strong {
+   color: #a02571;
+    font-weight: bold;
  }
 
+ code {
+  background-color: #e3e3e3;
+  border: 1px solid #969494;
+  border-radius: 5px;
+} 
  
-/* ELEMENTI NEL MAIN - ARTICLE */
+ul, ol {
+  margin: 2em;
+ }
 
 /* TABELLE */
 table {
-    border: 1px solid black;
-    border-collapse: collapse;
-  }
+  margin-top: 1.5em;
+  margin-bottom: 1.5em;
+}
+caption {
+  font-weight: bold;
+  font-style: italic;
+}
+thead tr {
+  background-color: #3f6bca;
+  color: #ffffff;
+}
 
-  td,
-  th {
-    border: 1px solid black;
-    padding: 5px;
-  }
+th, td {
+  padding: 12px 15px;
+  vertical-align: bottom;
+  text-align: center;
+}
+
+tbody tr {
+  border-bottom: 1px solid #dddddd;
+}
+
+/* :nth-of-type abbina gli elementi in base alla loro posizione tra gli elementi simili dello stesso tipo */
+tbody tr:nth-of-type(even) {
+  background-color: #f3f3f3;
+}
+
+tbody tr:last-of-type {
+  border-bottom: 2px solid #3f6bca;
+}
+
+/* main dopo tabella */
+
+iframe {
+  width: 100%;
+  height: auto;
+  margin-bottom: 2em;
+  border-radius: 20px;
+  margin-top: 1.5em;
+}
+
 /* FORM */
 
+section {
+background-color: #e3e3e3;
+padding: 1em;
+margin-bottom: 1.5em;  
+}
+
+section h2 {
+  text-align: center;
+  color: black;
+  font-weight: bold;
+  font-size: 1.5em;
+  text-transform: uppercase;
+  margin-bottom: 1em;
+}
+
+section input {
+  margin-top: 1em;
+  border: 0;
+  /* bordo inferiore: tratteggiato */
+  border-bottom: 1px dashed #333;
+}
+
+section button {
+  background-color: #3f6bca;
+  color: white;
+  font-weight: bold;
+  border: 0;
+}
+
 /* ELEMENTI NELL' ASIDE */
-#box3 {
-background-color: whitesmoke;
-padding: 15px;
 
+aside h2 {
+  text-align: center;
+  font-weight: bold;
+  font-size: 1.5em;
 }
 
-#nov {
-    text-align: center;
+aside div {
+  background-color: #e3e3e3;
+  padding: 1em;
+  border: 1px solid #c3c3ce;
+  margin-bottom: 1em;
 }
 
-#iscriviti {
-    background-color: blue;
-    color: white;
+aside div p:last-child {
+  margin-bottom: 0;
+  font-size: 0.8em;
+  text-align: right;
 }
 
 /* FOOTER */
-#box4 {
-    margin-top: 25px;
-    width: 420px;
-    margin-top: 20px;
-    margin-left: auto;
-    margin-right: auto;
-    background-color: #005566;
-    color: white;
-    padding: 15px;
-    text-align: center;
-    margin-bottom: 15px;
+
+footer {
+  background: linear-gradient(0deg, rgba(53,53,53,1) 0%, rgba(5,85,103,1) 68%);
+  text-align: center;
+  padding-bottom: 1.5em;
+  box-shadow: 0 3px 3px #444;
+  color: white;
+  font-size: 1em;
+}
+
+footer p {
+  text-align: center;
+  padding-top: 1em;
+  padding-bottom: 1em;
+}
+
+footer a {
+  color: fuchsia;
 }
