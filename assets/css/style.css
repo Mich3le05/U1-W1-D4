@@ -22,7 +22,6 @@ body {
     background-color: #0088aa;
     color: white;
     padding-bottom: 15px;
-    
 }
 
 #logo {
@@ -89,4 +88,21 @@ padding: 15px;
     text-align: center;
 }
 
+#iscriviti {
+    background-color: blue;
+    color: white;
+}
+
 /* FOOTER */
+#box4 {
+    margin-top: 25px;
+    width: 420px;
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #005566;
+    color: white;
+    padding: 15px;
+    text-align: center;
+    margin-bottom: 15px;
+}
